@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Triangle-EQEducation</title>
+    <meta name="description" content="Triangle-EQEducationへのお問い合わせはこちらから。">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script type="module" src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container header__inner">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <span class="logo-text">Triangle-EQEducation</span>
+                        <span class="logo-tagline">すれ違いを分かり合うに。そして協創の社会へ</span>
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="topics.html">トピックス</a></li>
+                        <li><a href="about-eq.html">EQとは</a></li>
+                        <li><a href="services.html">事業案内</a></li>
+                        <li><a href="company.html">会社情報</a></li>
+                        <li><a href="contact.html" class="header__btn">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+                <div class="header__mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-padding">
+                <div class="container">
+                    <h2 class="section-title">CONTACT</h2>
+                    <p style="text-align: center; margin-bottom: 40px;">サービスに関するご質問やご相談など、お気軽にお問い合わせください。</p>
+
+                    <form
+                        style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: bold;">お名前</label>
+                            <input type="text" id="name" name="name"
+                                style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="email"
+                                style="display: block; margin-bottom: 8px; font-weight: bold;">メールアドレス</label>
+                            <input type="email" id="email" name="email"
+                                style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 8px; font-weight: bold;">お問い合わせ内容</label>
+                            <textarea id="message" name="message" rows="5"
+                                style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn" style="border: none; cursor: pointer;">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer__info">
+                    <div class="footer__logo">Triangle-EQEducation</div>
+                    <address class="footer__address">
+                        〒100-0000<br>
+                        福岡県福岡市博多区東那珂1-7-22-403...<br>
+                        TEL: 03-0000-0000
+                    </address>
+                </div>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                &copy; 2026 Triangle-EQEducation. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
