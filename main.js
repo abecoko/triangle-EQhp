@@ -1,7 +1,7 @@
 // MicroCMS Config
 // ★ここに、後ほど取得する「サービスドメイン」と「APIキー」を入力します
-const MICROCMS_SERVICE_DOMAIN = "YOUR_SERVICE_DOMAIN"; // 例: my-triangle-site
-const MICROCMS_API_KEY = "YOUR_API_KEY"; // 例: xxxxx-xxxx-xxxx
+const MICROCMS_SERVICE_DOMAIN = "triangle-eq";
+const MICROCMS_API_KEY = "NqUUbWbqw7OA6Ta5cWV6ZNCDxKQraWb7Q1l1";
 
 console.log('Triangle EQ Website Loaded');
 
@@ -22,10 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check if we are on index.html or topics.html (List pages)
     const topicsList = document.querySelector('.topics__list');
-    if (topicsList && MICROCMS_SERVICE_DOMAIN !== "YOUR_SERVICE_DOMAIN") {
+    if (topicsList) {
         fetchTopics(topicsList);
-    } else if (topicsList) {
-        console.log('MicroCMS未設定のため、静的コンテンツを表示しています');
     }
 
     // Check if we are on news_detail.html (Detail page)
@@ -34,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const urlParams = new URLSearchParams(window.location.search);
         const contentId = urlParams.get('id');
 
-        if (contentId && MICROCMS_SERVICE_DOMAIN !== "YOUR_SERVICE_DOMAIN") {
+        if (contentId) {
             fetchTopicDetail(contentId, articleContainer);
         } else if (articleContainer) {
-            articleContainer.innerHTML = '<p style="text-align:center">記事が見つかりません。MicroCMSの設定を確認してください。</p>';
+            articleContainer.innerHTML = '<p style="text-align:center">記事が見つかりません。URLを確認してください。</p>';
         }
     }
 });
